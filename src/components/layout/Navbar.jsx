@@ -110,7 +110,7 @@ export function Navbar({ currentPath = "/" }) {
                   onClick={(e) => handleNavClick(e, item)}
                   className={`block px-3.5 py-2.5 text-sm font-medium rounded-lg transition-colors ${
                     isActive
-                      ? "text-red-700 bg-red-50 font-semibold"
+                      ? "text-[#2A9D8F] bg-[#2A9D8F]/10 font-semibold"
                       : "text-slate-700 hover:bg-slate-100"
                   }`}
                 >
