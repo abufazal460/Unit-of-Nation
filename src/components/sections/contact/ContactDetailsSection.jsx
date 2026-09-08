@@ -18,7 +18,8 @@ export function ContactDetailsSection() {
       icon: FaWhatsapp,
       color: "text-emerald-600 bg-emerald-50 border-emerald-200 hover:bg-emerald-100",
       btnColor: "bg-emerald-600 hover:bg-emerald-700 text-white",
-      url: site.whatsappUrl
+      url: site.whatsappUrl,
+      hoverColor: "group-hover:text-[#2A9D8F]",
     },
     {
       id: "facebook",
@@ -27,7 +28,8 @@ export function ContactDetailsSection() {
       icon: FaFacebook,
       color: "text-blue-600 bg-blue-50 border-blue-200 hover:bg-blue-100",
       btnColor: "bg-blue-600 hover:bg-blue-700 text-white",
-      url: "https://www.facebook.com/share/1Md2dFpnck/"
+      url: "https://www.facebook.com/share/1Md2dFpnck/",
+      hoverColor: "group-hover:text-blue-800",
     },
     {
       id: "instagram",
@@ -36,7 +38,8 @@ export function ContactDetailsSection() {
       icon: FaInstagram,
       color: "text-pink-600 bg-pink-50 border-pink-200 hover:bg-pink-100",
       btnColor: "bg-pink-600 hover:bg-pink-700 text-white",
-      url: "https://www.instagram.com/unitefornationorg/"
+      url: "https://www.instagram.com/unitefornationorg/",
+      hoverColor: "group-hover:text-pink-600",
     },
     {
       id: "X",
@@ -45,7 +48,8 @@ export function ContactDetailsSection() {
       icon: FaXTwitter,
       color: "text-slate-900 bg-slate-100 border-slate-300 hover:bg-slate-200",
       btnColor: "bg-slate-900 hover:bg-slate-800 text-white",
-      url: "https://x.com/Unite4NationOrg"
+      url: "https://x.com/Unite4NationOrg",
+      hoverColor: "group-hover:text-slate-700",
     },
     {
       id: "youtube",
@@ -54,7 +58,8 @@ export function ContactDetailsSection() {
       icon: FaYoutube,
       color: "text-red-600 bg-red-50 border-red-200 hover:bg-red-100",
       btnColor: "bg-red-600 hover:bg-red-700 text-white",
-      url: "https://www.youtube.com/channel/UCBEFl7KofquOu8biYK_YMrQ"
+      url: "https://www.youtube.com/channel/UCBEFl7KofquOu8biYK_YMrQ",
+      hoverColor: "group-hover:text-red-700",
     },
    
   ];
@@ -161,7 +166,7 @@ export function ContactDetailsSection() {
                       <IconComp className="w-6 h-6" />
                     </div>
                     <div>
-                      <h4 className="text-base sm:text-lg font-heading font-bold text-slate-900 group-hover:text-emerald-600 transition-colors">
+                      <h4 className={`text-base sm:text-lg font-heading font-bold text-slate-900  transition-colors ${social.hoverColor}`}>
                         {social.name}
                       </h4>
                       <p className="text-xs sm:text-sm text-slate-500 font-mono">
