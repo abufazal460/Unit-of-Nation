@@ -5,26 +5,18 @@ import Lenis from 'lenis';
 
 export function MainLayout({ children, currentPath = "/" }) {
   useEffect(() => {
-    const lenis = new Lenis({
-      duration: 1.5,
-      easing: (t) => (t === 1 ? 1 : 1 - Math.pow(2, -10 * t)),
-      smoothWheel: true,
-      wheelMultiplier: 1.15,
-      touchMultiplier: 2.0,
-      infinite: false
-    });
+  const isTouchDevice = window.matchMedia('(pointer: coarse)').matches;
+  const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (isTouchDevice || prefersReducedMotion) return; // native scroll on mobile
 
-    function raf(time) {
-      lenis.raf(time);
-      requestAnimationFrame(raf);
-    }
-
+  const lenis = new Lenis({ duration: 1.5, smoothWheel: true, infinite: false });
+  function raf(time) {
+    lenis.raf(time);
     requestAnimationFrame(raf);
-
-    return () => {
-      lenis.destroy();
-    };
-  }, []);
+  }
+  requestAnimationFrame(raf);
+  return () => lenis.destroy();
+}, []);
 
   return (
     <div className="min-h-screen bg-[#faf8f5] text-slate-800 flex flex-col font-body selection:bg-red-700 selection:text-white">
