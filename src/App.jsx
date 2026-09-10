@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from 'react';
-import Home from './pages/Home';
-import About from './pages/About';
-import Gallery from './pages/Gallery';
-import Contact from './pages/Contact';
-import NotFound from './pages/NotFound';
-import Donate from './pages/Donate';
+import { lazy, Suspense } from 'react';
+const Home = lazy(() => import('./pages/Home'));
+const About = lazy(() => import('./pages/About'));
+const Gallery = lazy(() => import('./pages/Gallery'));
+const Contact = lazy(() => import('./pages/Contact'));
+const Donate = lazy(() => import('./pages/Donate'));
+const NotFound = lazy(() => import('./pages/NotFound'));
 
 export function App() {
   const [currentPath, setCurrentPath] = useState(window.location.pathname);
