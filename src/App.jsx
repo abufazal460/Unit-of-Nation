@@ -6,7 +6,7 @@ import {
   ContactSkeleton,
   DonateSkeleton,
   NotFoundSkeleton,
-} from './components/common/PageSkeletons';
+} from './components/common/PageSkeleton';
 
 // Each page is its own lazy-loaded chunk (keeps initial bundle small).
 const Home = lazy(() => import('./pages/Home'));
