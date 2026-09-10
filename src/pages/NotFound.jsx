@@ -1,9 +1,15 @@
-import React from 'react';
+import { useEffect } from 'react';
 import MainLayout from '../components/layout/MainLayout';
 import Container from '../components/common/Container';
 import Button from '../components/common/Button';
 
 export function NotFound() {
+   useEffect(() => {
+    document.title = "Page Not Found — Unite For Nation";
+    let robots = document.querySelector('meta[name="robots"]');
+    if (robots) robots.setAttribute("content", "noindex, follow");
+    return () => robots && robots.setAttribute("content", "index, follow");
+  }, []);
   return (
     <MainLayout currentPath="/404">
       <section className="py-20 bg-[#faf8f5] text-center">
