@@ -5,6 +5,8 @@ import SectionTitle from '../../common/SectionTitle';
 import Card from '../../ui/Card';
 import Icon from '../../common/Icon';
 
+import img1 from "../../../assets/works/work 1.jpeg"
+
 export function AchievementSection() {
   return (
     <section className="py-12 sm:py-16 bg-white border-t border-slate-200">
@@ -30,6 +32,9 @@ export function AchievementSection() {
           ))}
         </div>
       </Container>
+      <div className='pt-12 px-5 xl:px-38'>
+        <img src={img1} alt="" />
+      </div>
     </section>
   );
 }
