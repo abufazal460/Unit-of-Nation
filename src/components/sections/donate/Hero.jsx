@@ -87,14 +87,14 @@ export default function Hero({ hero }) {
           </motion.ul>
         </div>
 
-        <div className="relative flex items-center justify-center bg-gradient-to-br from-[#0F172A] to-[#134E4A] px-6 py-16 sm:py-20 lg:py-0">
+        <div className="relative flex items-center justify-center bg-gradient-to-br from-[#0F172A] to-[#134E4A] px-6 py-16 sm:py-20 lg:py-0 overflow-hidden">
           <div
             aria-hidden="true"
-            className="pointer-events-none absolute -right-16 -top-16 h-64 w-64 rounded-full bg-[#D4AF37]/10 blur-3xl"
+            className="pointer-events-none absolute -right-16 -top-16 h-64 w-64 rounded-full bg-[#D4AF37]/10 blur-3xl hidden lg:block"
           />
           <div
             aria-hidden="true"
-            className="pointer-events-none absolute -bottom-20 -left-10 h-64 w-64 rounded-full bg-[#1F6F5F]/30 blur-3xl"
+            className="pointer-events-none absolute -bottom-20 -left-10 h-64 w-64 rounded-full bg-[#1F6F5F]/30 blur-3xl hidden lg:block"
           />
           <HeroQR qr={hero.qr} />
         </div>

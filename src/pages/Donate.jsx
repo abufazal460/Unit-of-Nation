@@ -31,7 +31,7 @@ import MainLayout from "../components/layout/MainLayout";
 export default function Donate() {
   return (
     <MainLayout currentPath="/donate">
-    <main id="main-content" className="min-h-screen bg-[#F8FAFC]">
+    <main id="main-content" className="min-h-screen bg-[#F8FAFC] overflow-x-hidden">
       <title>Donate — Unit of Nation | Legal Aid for the Wrongly Accused</title>
       <meta
         name="description"

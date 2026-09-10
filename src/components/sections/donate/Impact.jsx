@@ -12,7 +12,7 @@ export default function Impact({ impact }) {
   if (!impact) return null;
 
   return (
-    <section id="impact" aria-labelledby="impact-heading" className="bg-[#F8FAFC] px-5 py-16 sm:px-8 lg:px-12">
+    <section id="impact" aria-labelledby="impact-heading" className="bg-[#F8FAFC] px-5 py-16 sm:px-8 lg:px-12 overflow-hidden">
       <div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-10 lg:grid-cols-2 lg:gap-16">
         <motion.img
           variants={slideInLeft}
