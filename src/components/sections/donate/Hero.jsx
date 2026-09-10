@@ -1,7 +1,7 @@
-import { motion } from "framer-motion";
-import { FiShield  } from "react-icons/fi";
-import { MdOutlineVerified , MdOutlineBalance  } from "react-icons/md";
-import {  GiGavel } from "react-icons/gi";
+import { motion } from "motion/react";
+import { FiShield } from "react-icons/fi";
+import { MdOutlineVerified, MdOutlineBalance } from "react-icons/md";
+import { GiGavel } from "react-icons/gi";
 import HeroButtons from "./HeroButtons";
 import HeroQR from "./HeroQR";
 import { fadeUp, staggerContainer, staggerItem, viewportOnce } from "./animations";
@@ -26,23 +26,18 @@ export default function Hero({ hero }) {
     <section aria-labelledby="donate-hero-heading" className="relative overflow-hidden bg-[#F8FAFC]">
       <div className="mx-auto grid max-w-7xl grid-cols-1 lg:grid-cols-[minmax(0,1fr)_420px]">
         <div className="flex flex-col justify-center gap-6 px-5 py-16 sm:px-8 sm:py-20 lg:px-12">
-          <motion.h1
+          <h1
             id="donate-hero-heading"
-            variants={fadeUp}
-            initial="hidden"
-            animate="visible"
             className="text-4xl font-bold leading-tight tracking-tight text-[#0F172A] sm:text-5xl"
           >
             {hero.headingLines.map((line, index) => (
               <span key={line} className="block">
                 {index === hero.headingLines.length - 1 ? (
                   <span className="text-[#1F6F5F]">{line}</span>
-                ) : (
-                  line
-                )}
+                ) : line}
               </span>
             ))}
-          </motion.h1>
+          </h1>
 
           <motion.p
             variants={fadeUp}

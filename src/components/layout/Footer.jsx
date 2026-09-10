@@ -7,7 +7,6 @@ import {
   FaInstagram,
   FaXTwitter,
   FaYoutube,
-  FaLinkedin,
 } from "react-icons/fa6";
 import { FiMail, FiMapPin } from "react-icons/fi";
 
@@ -53,12 +52,6 @@ export function Footer() {
           {/* Brand */}
           <div className="space-y-4">
             <div className="flex items-center gap-3.5">
-              {/* <img
-                src={site.logoUrl}
-                alt="Unite For Nation Logo"
-                className="w-14 h-14 rounded-lg border border-slate-200 shadow-xs"
-                referrerPolicy="no-referrer"
-              /> */}
               <div>
                 <h3 className="text-lg sm:text-xl font-heading font-bold text-slate-900">
                   {site.name}

@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+import { motion } from "motion/react";
 import { GiLifeInTheBalance  } from "react-icons/gi";
 import { fadeUp, scrollToId, viewportOnce } from "./animations";
 

@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+import { motion } from "motion/react";
 import { FiFileText, FiBriefcase, FiCheckCircle, FiShield, FiLock, FiCreditCard } from "react-icons/fi";
 import { staggerContainer, staggerItem, viewportOnce } from "./animations";
 

@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+import { motion } from "motion/react";
 import { FiShield } from "react-icons/fi";
 import { SiPaytm, SiGooglepay, SiPhonepe } from "react-icons/si";
 import { PiCreditCardBold, PiQrCodeBold } from "react-icons/pi";

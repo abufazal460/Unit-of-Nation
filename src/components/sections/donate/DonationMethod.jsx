@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+import { motion } from "motion/react";
 import { FiDownload } from "react-icons/fi";
 import CopyButton from "../../ui/CopyButton";
 import { fadeUp, scaleIn, viewportOnce } from "./animations";
