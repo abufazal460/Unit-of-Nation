@@ -1,4 +1,4 @@
-import logo from "../assets/logo/logo.png"
+import logo from "../assets/logo/logo.webp"
 export const site = {
   name: "Unite For Nation",
   fullName: "Unite For Nation Human Rights Foundation",

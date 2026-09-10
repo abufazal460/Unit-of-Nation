@@ -1,15 +1,15 @@
-import achievement1 from "../assets/achievements/achievements 1.jpeg";
-import achievement2 from "../assets/achievements/achievements 2.jpeg";
-import achievement3 from "../assets/achievements/achievements 3.jpeg";
+import achievement1 from "../assets/gallery/achievements/achievements 1.webp";
+import achievement2 from "../assets/gallery/achievements/achievements 2.webp";
+import achievement3 from "../assets/gallery/achievements/achievements 3.webp";
 
-import news1 from "../assets/News/news paper 1.jpeg";
-import news2 from "../assets/News/news paper 2.jpeg";
-import news3 from "../assets/News/news paper 3.jpeg";
-import news4 from "../assets/News/news paper 4.jpeg";
+import news1 from "../assets/gallery/News/news paper 1.webp";
+import news2 from "../assets/gallery/News/news paper 2.webp";
+import news3 from "../assets/gallery/News/news paper 3.webp";
+import news4 from "../assets/gallery/News/news paper 4.webp";
 
-import work1 from "../assets/works/work 1.jpeg";
-import work2 from "../assets/works/work 2.jpeg";
-import work3 from "../assets/works/work 3.jpeg";
+import work1 from "../assets/gallery/works/work 1.webp";
+import work2 from "../assets/gallery/works/work 2.webp";
+import work3 from "../assets/gallery/works/work 3.webp";
 
 export const gallery = [
   {

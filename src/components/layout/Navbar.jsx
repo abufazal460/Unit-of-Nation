@@ -30,8 +30,8 @@ export function Navbar({ currentPath = "/" }) {
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-40 transition-all duration-200 ${isScrolled
-          ? "bg-white/95 backdrop-blur-md border-b border-slate-200 shadow-xs py-3"
-          : "bg-white border-b border-slate-100 py-3"
+        ? "bg-white/95 backdrop-blur-md border-b border-slate-200 shadow-xs py-3"
+        : "bg-white border-b border-slate-100 py-3"
         }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
@@ -40,8 +40,9 @@ export function Navbar({ currentPath = "/" }) {
           <img
             src={site.logoUrl}
             alt="Unite For Nation Logo"
-            className="w-10 h-11 sm:w-13 sm:h-14 shadow-xs group-hover:scale-105 transition-transform"
-            referrerPolicy="no-referrer"
+            width="44"
+            height="48"
+            className="w-12 h-14 sm:w-13 sm:h-15"
           />
           <div>
             <span className="block text-2xl sm:text-2xl font-heading font-extrabold text-slate-900 tracking-tight group-hover:text-[#2A9D8F] transition-colors">
@@ -63,8 +64,8 @@ export function Navbar({ currentPath = "/" }) {
                 href={item.href}
                 onClick={(e) => handleNavClick(e, item)}
                 className={`px-4 py-2.5 text-base sm:text-lg font-bold rounded-xl transition-colors ${isActive
-                    ? "text-white bg-black font-extrabold"
-                    : "text-slate-700 hover:text-slate-950 hover:bg-slate-100"
+                  ? "text-white bg-black font-extrabold"
+                  : "text-slate-700 hover:text-slate-950 hover:bg-slate-100"
                   }`}
               >
                 {item.label}
@@ -105,8 +106,8 @@ export function Navbar({ currentPath = "/" }) {
                   href={item.href}
                   onClick={(e) => handleNavClick(e, item)}
                   className={`block px-3.5 py-2.5 text-sm font-medium rounded-lg transition-colors ${isActive
-                      ? "text-[#2A9D8F] bg-[#2A9D8F]/10 font-semibold"
-                      : "text-slate-700 hover:bg-slate-100"
+                    ? "text-[#2A9D8F] bg-[#2A9D8F]/10 font-semibold"
+                    : "text-slate-700 hover:bg-slate-100"
                     }`}
                 >
                   {item.label}

@@ -30,7 +30,6 @@ export function Gallery() {
                 <div className="relative aspect-[4/3] overflow-hidden">
                   <img
                     src={item.image}
-                    // srcSet={`${item.imageWebpSmall} 480w, ${item.imageWebp} 960w`}
                     sizes="(max-width: 640px) 100vw, 33vw"
                     alt={item.title}
                     loading="lazy"
