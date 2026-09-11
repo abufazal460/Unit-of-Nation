@@ -24,7 +24,7 @@ export default function HeroButtons({ buttons }) {
           type="button"
           aria-label={button.ariaLabel ?? button.label}
           onClick={() => scrollToId(button.targetId)}
-          className={`inline-flex items-center justify-center rounded-full px-6 py-3 text-sm font-semibold transition-colors duration-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 ${
+          className={`inline-flex items-center justify-center cursor-pointer rounded-full px-6 py-3 text-sm font-semibold transition-colors duration-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 ${
             VARIANT_CLASSES[button.variant] ?? VARIANT_CLASSES.secondary
           }`}
         >
