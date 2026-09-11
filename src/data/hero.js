@@ -1,22 +1,17 @@
-import heroImg from "../assets/Certificate/Certificate.jpeg"
+import heroImg1 from "../assets/works/work1.jpeg";
+import heroImg2 from "../assets/works/work2.png"; // confirm this is your real 2nd asset path
 
 export const hero = {
-  eyebrow: "UNITED FOR JUSTICE & TRUTH",
-  headline: "Protecting Innocents From False Accusations & Unjust Imprisonment",
-  highlightedWords: ["False Accusations", "Unjust Imprisonment"],
-  paragraph: "Unite For Nation is a national non-profit advocacy organization providing legal awareness, defense guidance, investigation support, and voice to individuals wrongfully accused or incarcerated.",
-  primaryButton: { label: "Seek Immediate Help", href: "/contact", variant: "primary" },
-  secondaryButton: { label: "Our Work & Impact", href: "#process", variant: "outline" },
-  image: heroImg,
-  trustBadges: [
-    { id: "tb-1", icon: "FiShield", label: "Govt. Registered NGO" },
-    { id: "tb-2", icon: "FiCheckCircle", label: "100% Free Legal Guidance" },
-    { id: "tb-3", icon: "FiAward", label: "80G & 12A Certified" },
-    { id: "tb-4", icon: "FiHeart", label: "3,400+ Victims Assisted" }
+  images: [
+    {
+      id: "hero-slide-1",
+      src: heroImg1,
+      alt: "Unite For Nation registration certificate confirming legal NGO status",
+    },
+    {
+      id: "hero-slide-2",
+      src: heroImg2,
+      alt: "Unite For Nation legal aid team supporting a wrongfully accused case",
+    },
   ],
-  statsOverview: [
-    { label: "Cases Reviewed", value: "4,500+" },
-    { label: "Innocents Released", value: "850+" },
-    { label: "Legal Camps Conducted", value: "120+" }
-  ]
 };
